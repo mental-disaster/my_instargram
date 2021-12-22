@@ -42,7 +42,14 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://localhost/my_instargram"),
+    'default' : {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myinstargram',
+        'USER': 'instargram',
+        'PASSWORD': 'instargram',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 # https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
