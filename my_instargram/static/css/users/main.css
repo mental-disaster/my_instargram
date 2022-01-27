@@ -1,0 +1,6 @@
+body {
+    background: blanchedalmond;
+    display: flex;
+    
+    flex-direction: column;
+}

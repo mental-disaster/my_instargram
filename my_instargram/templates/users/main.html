@@ -1,3 +1,11 @@
+{% extends "users/base.html" %}
+
+{% block title %}
+my instargram
+{% endblock title %}
+
+{% block content %}
+
 <h1>Main Page</h1>
 
 <form action="{% url 'users:main' %}" method='post'> 
@@ -8,3 +16,5 @@
 </form>
 
 <a href="{% url 'users:signup' %}">SignUp</a>
+
+{% endblock content %}
