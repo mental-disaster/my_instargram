@@ -10,8 +10,8 @@ my instargram
 
 <form action="{% url 'users:main' %}" method='post'> 
     {% csrf_token %}
-    <input type='input' name='username' placeholder="usermane">
-    <input type='password' name='password' placeholder="password">
+    <input type='input' name='username' placeholder="usermane"><br>
+    <input type='password' name='password' placeholder="password"><br>
     <input type='submit' value="LOGIN">
 </form>
 

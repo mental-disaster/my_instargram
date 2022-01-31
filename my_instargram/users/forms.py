@@ -25,13 +25,6 @@ class SignUpForm(django_forms.ModelForm):
         model = User
         fields = ['email', 'name', 'username', 'password']
 
-        labels = {
-            'email': '이메일 주소',
-            'name' : '성명',
-            'username' : '사용자 이름',
-            'password' : '비밀번호',
-        }
-
         widgets = {
             'email': django_forms.TextInput(attrs={'placeholder': 'example@email.com'}),
             'name': django_forms.TextInput(attrs={'placeholder': 'Doe'}),

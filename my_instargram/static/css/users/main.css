@@ -1,6 +1,18 @@
 body {
-    background: blanchedalmond;
-    display: flex;
-    
-    flex-direction: column;
+    background-color :blanchedalmond;
+    text-align : center;
+}
+
+.contents form {
+    width : 250px;
+    height : auto;
+    margin : 10px auto;
+    padding : 30px;
+    border : 2px solid black;
+    box-sizing : border-box;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }

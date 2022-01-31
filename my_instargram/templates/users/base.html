@@ -11,10 +11,12 @@
 </head>
 <body>
     Base Page
-    <div>
+    <div class='contents'>
         {% block content %}
         {% endblock content %}
     </div>
-    {% include "users/footer.html" %}
+    <footer>
+        {% include "users/footer.html" %}
+    </footer>
 </body>
 </html>
