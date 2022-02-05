@@ -6,16 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href="{% static 'css/users/main.css' %}">
+    <link rel='stylesheet' type='text/css' href="{% static 'css/posts/main.css' %}">
+    <link rel='stylesheet' type='text/css' href="{% static 'css/posts/header.css' %}">
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
-    <div class='contents'>
-        {% block content %}
-        {% endblock content %}
+    Base Page
+    <div class='header'>
+        {% include "posts/header.html" %}
     </div>
-    <footer>
-        {% include "users/footer.html" %}
-    </footer>
 </body>
 </html>
