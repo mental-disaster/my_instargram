@@ -6,3 +6,7 @@ header div{
 hr {
     color: black;
 }
+
+.search input {
+    text-align: center;
+}
